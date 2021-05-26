@@ -1,0 +1,52 @@
+.nav-header {
+  margin-top: 0;
+  height: 70px;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: yellowgreen;
+}
+
+.link {
+  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 2rem;
+  height: 100%;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.bars {
+  display: none;
+  color: black;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-header {
+    transition: 0.8s all ease;
+  }
+
+  .bars {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 20%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
+
+  .menu-items {
+    display: none;
+  }
+}

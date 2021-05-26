@@ -1,0 +1,7 @@
+.dashboard {
+  padding-top: 70px;
+  display: flex;
+  background-color: aliceblue;
+  justify-items: center;
+  flex-direction: column;
+}
